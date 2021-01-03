@@ -4,8 +4,9 @@ import { SafeAreaView, StatusBar } from 'react-native';
 import HomeScreen from './src/screens/Home';
 import Post from './src/components/Post';
 import feed from './assets/data/feed';
+import SearchResultsScreen from './src/screens/SearchResults';
 
-const post1 = feed[0];
+// const post1 = feed[0];
 
 export default function App() {
   return (
@@ -13,7 +14,8 @@ export default function App() {
       <StatusBar barStyle='dark-content' />
       <SafeAreaView>
         {/* <HomeScreen /> */}
-        <Post post={post1} />
+        {/* <Post post={post1} /> */}
+        <SearchResultsScreen />
       </SafeAreaView>
     </>
   );
