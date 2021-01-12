@@ -6,11 +6,11 @@ import styles from './styles';
 
 const GuestsScreen = (props) => {
 
-    const navigation = useNavigation();
-
     const [adults, setAdults] = useState( 0 );
     const [children, setChildren] = useState( 0 );
     const [infants, setInfants] = useState( 0 );
+
+    const navigation = useNavigation();
 
     return (
         <View style={styles.container}>
@@ -112,6 +112,14 @@ const GuestsScreen = (props) => {
             <View>
                 {/* Button */}
                 <Pressable 
+                    onPress={() =>
+                        navigation.navigate('Home', {
+                            screen: 'Explore',
+                            params: {
+                                screen: 'SearchResults'
+                            },
+                        })
+                    }
                     style={styles.searchButton}
                     // onPress={() => navigation.navigate('')}
                     >
