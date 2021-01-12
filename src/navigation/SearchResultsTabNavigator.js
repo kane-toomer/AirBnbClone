@@ -29,4 +29,4 @@ const SearchResultsTabNavigator = (props) => {
         
 }
 
-export default SearchResultsTabNavigator
+export default SearchResultsTabNavigator;
